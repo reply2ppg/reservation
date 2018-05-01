@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Movie Reservation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+  <link rel="stylesheet" type="text/css"
+        href="webjars/bootstrap/4.1.0/css/bootstrap.min.css"/>
+</head>
+
+<body>
+
+  <div class="starter-template">
+    <h2>Search Movies</h2>
+    <form class="form-horizontal" id="search-form">
+        <div class="form-group form-group-lg">
+          <label class="col-sm-2 control-label">
+            Movie Name
+          </label>
+          <input type="text" id="moive-name"/>
+          <button type="submit" id="search-button"
+                  class="btn-primary btn-small" disabled="disabled">Search Movies
+          </button>
+        </div>
+        <div>
+          <label class="col-sm-2 control-label">
+            Theater Name
+          </label>
+          <input type="text" id="theater-name" />
+        </div>
+        <div>
+          <label class="col-sm-2 control-label">
+            Theater City
+          </label>
+          <input type="text" id="city-name"/>
+        </div>
+    </form>
+</div>
+  <div id="movie-details"></div>
+  <script type="text/javascript"
+          src="webjars/jquery/3.3.1-1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
